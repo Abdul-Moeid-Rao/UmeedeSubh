@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --white: #FFFFFF;
   --paper: #FAF7F0;
@@ -14,8 +16,26 @@
   --amber: #F5B226;
   --orange: #F07D3E;
   --silver: #D1D2D4;
+  --card-bg: #FFFFFF;
   --radius: 10px;
   --ease: cubic-bezier(.22, 1, .36, 1);
+}
+
+.dark, [data-theme='dark'] {
+  --white: #111218;
+  --paper: #181924;
+  --ink: #F5F5F7;
+  --gold: #FCC609;
+  --ember: #EB543B;
+  --gray: #9CA3AF;
+  --mist: #272938;
+  --dawn: #262114;
+  --leaf: #3FB971;
+  --brick: #E04848;
+  --amber: #F5B226;
+  --orange: #F07D3E;
+  --silver: #4B4D5D;
+  --card-bg: #181924;
 }
 
 @theme inline {
@@ -240,5 +260,30 @@ body {
   background-image: radial-gradient(rgba(27, 26, 31, 0.07) 1px, transparent 1px);
   background-size: 24px 24px;
 }
+
+.dark .bg-dot-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #111218;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #272938;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #3c3f56;
+}
+
+.dark input:not([type="checkbox"]):not([type="radio"]),
+.dark select,
+.dark textarea {
+  background-color: var(--paper);
+  color: var(--ink);
+  border-color: var(--mist);
+}
+
 
 

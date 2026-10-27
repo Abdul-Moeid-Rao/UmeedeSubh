@@ -12,6 +12,7 @@ import {
   Heart,
 } from 'lucide-react';
 import Logo from './Logo';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export default function Footer() {
   return (
@@ -228,10 +229,10 @@ export default function Footer() {
             <span className="font-semibold text-[#FCC609]">Pehla Qadam Head</span>
           </div>
 
-          <div className="flex items-center gap-4 text-[11px]">
-            <span>Verified Ground Realities</span>
-            <span>·</span>
-            <span>Child Protection Policy</span>
+          <div className="flex items-center gap-3 text-[11px]">
+            <ThemeSwitcher variant="badge" />
+            <span className="hidden sm:inline">·</span>
+            <span className="hidden sm:inline">Child Protection Policy</span>
           </div>
         </div>
       </div>

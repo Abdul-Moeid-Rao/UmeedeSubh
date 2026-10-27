@@ -93,7 +93,7 @@ export default function HomePage() {
       {/* ========================================================
           1. HERO SECTION (Crafted Pure Design - No Stock BG Image)
           ======================================================== */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#FFFDF9] via-[#FAF7F0] to-[#F5F0E6] pt-14 pb-20 sm:pt-20 sm:pb-28 border-b border-mist/80">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#FFFDF9] via-[#FAF7F0] to-[#F5F0E6] dark:from-[#111218] dark:via-[#161724] dark:to-[#0E0F15] pt-14 pb-20 sm:pt-20 sm:pb-28 border-b border-mist/80">
         {/* Architectural Dot Matrix & Sunrise Atmospheric Glows */}
         <div className="absolute inset-0 bg-dot-pattern opacity-40 pointer-events-none" />
         <div className="absolute -top-36 -left-36 w-[550px] h-[550px] rounded-full bg-[#FCC609]/15 blur-3xl pointer-events-none animate-float-slow" />
@@ -108,11 +108,7 @@ export default function HomePage() {
             {/* Left Column: Mission, Typography & Action */}
             <div className="lg:col-span-7 space-y-6 text-left">
               {/* Status Pill Badge */}
-              <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white border border-[#FCC609]/40 shadow-2xs text-ink text-xs font-bold tracking-wide">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FCC609] opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FCC609]"></span>
-                </span>
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#FCC609]/40 shadow-2xs text-ink text-xs font-bold tracking-wide">
                 <span>Official Welfare Society · UET Taxila · Est. 2014</span>
               </div>
 
@@ -198,8 +194,7 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-[10px] font-bold">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-[10px] font-bold">
                     4:30 – 7:00 PM
                   </span>
                 </div>
@@ -296,12 +291,12 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* ========================================================
           IMPACT STRIP (Overlapping Card with 4 Big Numerals)
           ======================================================== */}
-      <section className="max-w-[1200px] mx-auto px-5 sm:px-8 -mt-12 sm:-mt-16 relative z-10">
+      < section className="max-w-[1200px] mx-auto px-5 sm:px-8 -mt-12 sm:-mt-16 relative z-10" >
         <div className="card-clean bg-white shadow-xl p-6 sm:p-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
             <div>
@@ -341,13 +336,13 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* ========================================================
           2. THE CORE CONVICTION
           Short, powerful, and deeply impactful layout
           ======================================================== */}
-      <section className="max-w-[1240px] mx-auto px-5 sm:px-8 py-20 sm:py-28">
+      < section className="max-w-[1240px] mx-auto px-5 sm:px-8 py-20 sm:py-28" >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-7 space-y-6 text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EB543B]/10 border border-[#EB543B]/30 text-[#EB543B] text-xs font-extrabold tracking-wider uppercase">
@@ -393,7 +388,7 @@ export default function HomePage() {
                 alt="Volunteer student teaching children in classroom"
                 className="w-full h-84 sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              
+
               {/* Floating Overlay Card */}
               <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-xl border border-mist shadow-lg flex items-center justify-between">
                 <div>
@@ -407,15 +402,15 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* ========================================================
           3. REGULAR PROJECTS (Section 8: Layout 3)
           Redesigned with scroll reveal animations & ambient background
           ======================================================== */}
-      <section className="relative overflow-hidden bg-paper py-24 sm:py-32 border-y border-mist">
+      < section className="relative overflow-hidden bg-paper py-24 sm:py-32 border-y border-mist" >
         {/* Ambient Animated Background Elements */}
-        <div className="absolute inset-0 bg-dot-pattern opacity-40 pointer-events-none" />
+        < div className="absolute inset-0 bg-dot-pattern opacity-40 pointer-events-none" />
         <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-[#FCC609]/10 blur-3xl pointer-events-none animate-float-slow" />
         <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-[#EB543B]/10 blur-3xl pointer-events-none animate-pulse-glow" />
 
@@ -700,14 +695,14 @@ export default function HomePage() {
             </div>
           </ScrollReveal>
         </div>
-      </section>
+      </section >
 
       {/* ========================================================
           4. YEARLY DRIVES (Horizontal Scroll Strip)
           ======================================================== */}
-      <section className="relative overflow-hidden max-w-[1240px] mx-auto px-5 sm:px-8 py-20 sm:py-28 space-y-8">
+      < section className="relative overflow-hidden max-w-[1240px] mx-auto px-5 sm:px-8 py-20 sm:py-28 space-y-8" >
         {/* Ambient Glow */}
-        <div className="absolute top-1/2 -right-32 w-80 h-80 rounded-full bg-[#FCC609]/10 blur-3xl pointer-events-none animate-pulse-glow" />
+        < div className="absolute top-1/2 -right-32 w-80 h-80 rounded-full bg-[#FCC609]/10 blur-3xl pointer-events-none animate-pulse-glow" />
 
         <ScrollReveal direction="up" duration={700}>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 text-left">
@@ -788,15 +783,15 @@ export default function HomePage() {
             ))}
           </div>
         </ScrollReveal>
-      </section>
+      </section >
 
       {/* ========================================================
           5. ALUMNI TESTIMONIALS: VOICES FROM THE GROUND
           Single-slide carousel, arrow nav, auto-advance every 5s
           ======================================================== */}
-      <section className="relative overflow-hidden bg-paper py-16 sm:py-24 border-y border-mist">
+      < section className="relative overflow-hidden bg-paper py-16 sm:py-24 border-y border-mist" >
         {/* Ambient Elements */}
-        <div className="absolute inset-0 bg-dot-pattern opacity-30 pointer-events-none" />
+        < div className="absolute inset-0 bg-dot-pattern opacity-30 pointer-events-none" />
         <div className="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-[#FCC609]/10 blur-3xl pointer-events-none animate-float-slow" />
         <div className="absolute -bottom-24 -right-24 w-72 h-72 rounded-full bg-[#EB543B]/10 blur-3xl pointer-events-none animate-pulse-glow" />
 
@@ -879,11 +874,10 @@ export default function HomePage() {
                       key={idx}
                       onClick={() => setActiveAlumniIdx(idx)}
                       aria-label={`Go to testimonial ${idx + 1}`}
-                      className={`rounded-full transition-all duration-300 ${
-                        activeAlumniIdx === idx
-                          ? 'w-5 h-2 bg-[#FCC609]'
-                          : 'w-2 h-2 bg-mist hover:bg-pen-gray/40'
-                      }`}
+                      className={`rounded-full transition-all duration-300 ${activeAlumniIdx === idx
+                        ? 'w-5 h-2 bg-[#FCC609]'
+                        : 'w-2 h-2 bg-mist hover:bg-pen-gray/40'
+                        }`}
                     />
                   ))}
                 </div>
@@ -913,12 +907,12 @@ export default function HomePage() {
             </div>
           </ScrollReveal>
         </div>
-      </section>
+      </section >
 
       {/* ========================================================
           6. SPONSOR A CHILD (Full-width Dawn pale gold band)
           ======================================================== */}
-      <section className="bg-[#FFF3D1] py-16 sm:py-24 border-b border-[#FCC609]/30">
+      <section className="bg-[#FFF3D1] dark:bg-[#1C180E] py-16 sm:py-24 border-b border-[#FCC609]/30 dark:border-[#FCC609]/20">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-8 text-center space-y-8">
           <div className="max-w-2xl mx-auto space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-ink">
@@ -961,12 +955,12 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* ========================================================
           7. LATEST NEWS & DRIVES (1 large featured + 3 smaller)
           ======================================================== */}
-      <section className="max-w-[1200px] mx-auto px-5 sm:px-8 py-20 sm:py-28 space-y-10">
+      < section className="max-w-[1200px] mx-auto px-5 sm:px-8 py-20 sm:py-28 space-y-10" >
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-[#EB543B]">
@@ -1040,12 +1034,12 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section >
 
       {/* ========================================================
           8. JOIN THE TEAM (Ink Band with Scrolling 10 Teams)
           ======================================================== */}
-      <section className="bg-ink text-white py-14 overflow-hidden border-t border-slate-800">
+      < section className="bg-ink text-white py-14 overflow-hidden border-t border-slate-800" >
         <div className="max-w-[1200px] mx-auto px-5 sm:px-8 space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
@@ -1076,7 +1070,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Fraunces, Source_Sans_3, Noto_Nastaliq_Urdu } from 'next/font/google';
 import './globals.css';
+import { ThemeProvider } from '@/components/ThemeContext';
 
 const fraunces = Fraunces({
   variable: '--font-fraunces',
@@ -56,10 +57,30 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${fraunces.variable} ${sourceSans.variable} ${notoNastaliq.variable} h-full scroll-smooth`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                if (localStorage.getItem('ues-theme') === 'dark') {
+                  document.documentElement.classList.add('dark');
+                  document.documentElement.setAttribute('data-theme', 'dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                  document.documentElement.setAttribute('data-theme', 'light');
+                }
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col font-sans bg-white text-ink antialiased selection:bg-[#FFF3D1] selection:text-ink">
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

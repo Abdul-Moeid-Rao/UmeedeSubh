@@ -1,19 +1,23 @@
+'use client';
+
 import React from 'react';
+import { useTheme } from './ThemeContext';
 
 interface LogoProps {
   variant?: 'compact' | 'full';
-  theme?: 'light' | 'dark';
+  theme?: 'light' | 'dark' | 'auto';
   className?: string;
   height?: number;
 }
 
 export default function Logo({
   variant = 'compact',
-  theme = 'light',
+  theme = 'auto',
   className = '',
   height = 44,
 }: LogoProps) {
-  const isDark = theme === 'dark';
+  const { theme: activeTheme } = useTheme();
+  const isDark = theme === 'auto' ? activeTheme === 'dark' : theme === 'dark';
 
   if (variant === 'compact') {
     return (

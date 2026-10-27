@@ -68,7 +68,7 @@ function ProjectDetailsContent({
 
             {project.admissionsOpen && (
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[var(--dawn)] border border-[var(--gold)] text-ink text-xs font-bold">
-                <span className="w-2 h-2 rounded-full bg-[var(--leaf)] animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-[var(--leaf)]" />
                 Admissions Open (In Person)
               </span>
             )}

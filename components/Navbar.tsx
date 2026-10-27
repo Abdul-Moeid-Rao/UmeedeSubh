@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Logo from './Logo';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -290,6 +291,8 @@ export default function Navbar() {
 
           {/* Action CTAs - Attractive & Professional */}
           <div className="hidden lg:flex items-center gap-3">
+            <ThemeSwitcher />
+
             <Link
               href="/join"
               className="px-4 py-2 rounded-full font-bold text-xs text-ink hover:text-white hover:bg-ink border border-ink/20 hover:border-ink transition-all duration-200 shadow-2xs hover:shadow-xs"
@@ -307,6 +310,8 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-2 lg:hidden">
+            <ThemeSwitcher />
+
             <Link
               href="/donate"
               className="px-4 py-1.5 rounded-full bg-[#FCC609] text-ink font-black text-xs uppercase tracking-wider shadow-xs hover:bg-[#F5B226] transition-colors"
@@ -414,6 +419,11 @@ export default function Navbar() {
           </div>
 
           <div className="pt-4 border-t border-mist space-y-3">
+            <div className="flex items-center justify-between py-1">
+              <span className="text-xs font-bold text-pen-gray uppercase tracking-wider">Appearance</span>
+              <ThemeSwitcher variant="badge" />
+            </div>
+
             <div className="font-urdu text-sm text-pen-gray text-center leading-loose">
               ایک جدوجہد، باوقار اور خواندہ پاکستان کے لیے
             </div>
