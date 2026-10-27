@@ -20,14 +20,16 @@ export default function Logo({
       <div className={`inline-flex items-center gap-3 ${className}`}>
         {/* Logo Image */}
         <div
-          className="relative rounded-full overflow-hidden shrink-0 border border-mist shadow-xs bg-white flex items-center justify-center ring-2 ring-[var(--gold)]/20"
+          className={`relative rounded-full overflow-hidden shrink-0 border border-mist shadow-xs flex items-center justify-center ring-2 ring-[var(--gold)]/20 ${
+            isDark ? 'bg-ink' : 'bg-white'
+          }`}
           style={{ width: height, height: height }}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo.jpg"
+            src={isDark ? '/logo.jpg' : '/logo-alt.jpg'}
             alt="Umeed E Subh"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
         </div>
 
@@ -55,14 +57,16 @@ export default function Logo({
   return (
     <div className={`inline-flex flex-col items-center text-center ${className}`}>
       <div
-        className="relative rounded-full overflow-hidden shrink-0 border-2 border-[var(--gold)] shadow-md bg-white mb-2 ring-4 ring-[var(--dawn)]"
+        className={`relative rounded-full overflow-hidden shrink-0 border-2 border-[var(--gold)] shadow-md mb-2 ring-4 ring-[var(--dawn)] ${
+          isDark ? 'bg-ink' : 'bg-white'
+        }`}
         style={{ width: height * 2, height: height * 2 }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/logo.jpg"
+          src={isDark ? '/logo.jpg' : '/logo-alt.jpg'}
           alt="Umeed E Subh"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
       </div>
 
