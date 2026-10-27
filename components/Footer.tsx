@@ -225,9 +225,7 @@ export default function Footer() {
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-white/70 shadow-2xs">
             <span>Developed by</span>
-            <span className="font-semibold text-[#FCC609]">Abdul Moeid Rao</span>
-            <span className="text-white/30">|</span>
-            <span className="text-white/90 font-mono text-[11px]">23-CS</span>
+            <span className="font-semibold text-[#FCC609]">Pehla Qadam Head</span>
           </div>
 
           <div className="flex items-center gap-4 text-[11px]">
