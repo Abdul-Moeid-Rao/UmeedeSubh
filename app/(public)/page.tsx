@@ -11,6 +11,10 @@ import {
   MapPin,
   Calendar,
   Sparkles,
+  GraduationCap,
+  Laptop,
+  Users,
+  BookOpen,
 } from 'lucide-react';
 import {
   PROJECTS_DATA,
@@ -87,81 +91,209 @@ export default function HomePage() {
   return (
     <div className="space-y-0">
       {/* ========================================================
-          1. HERO SECTION (Desktop & Mobile, matching Section 6)
+          1. HERO SECTION (Crafted Pure Design - No Stock BG Image)
           ======================================================== */}
-      <section className="hero-container relative flex flex-col justify-between pt-24 pb-16 md:pt-32 md:pb-24">
-        {/* Full-width HD school classroom background with Ken Burns slow zoom animation */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=2400&q=90"
-            alt="Pehla Qadam evening school classroom with students studying"
-            className="w-full h-full object-cover object-center animate-kenburns transform will-change-transform"
-          />
-        </div>
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#FFFDF9] via-[#FAF7F0] to-[#F5F0E6] pt-14 pb-20 sm:pt-20 sm:pb-28 border-b border-mist/80">
+        {/* Architectural Dot Matrix & Sunrise Atmospheric Glows */}
+        <div className="absolute inset-0 bg-dot-pattern opacity-40 pointer-events-none" />
+        <div className="absolute -top-36 -left-36 w-[550px] h-[550px] rounded-full bg-[#FCC609]/15 blur-3xl pointer-events-none animate-float-slow" />
+        <div className="absolute top-1/4 -right-36 w-[550px] h-[550px] rounded-full bg-[#EB543B]/10 blur-3xl pointer-events-none animate-pulse-glow" />
+        <div className="absolute -bottom-24 left-1/3 w-[450px] h-[450px] rounded-full bg-[#FCC609]/10 blur-3xl pointer-events-none" />
 
-        {/* Sunrise motif rays in bottom-left at low opacity */}
-        <div className="absolute bottom-0 left-0 w-96 h-96 pointer-events-none z-[2] opacity-25">
-          <svg viewBox="0 0 200 200" fill="none" className="w-full h-full">
-            <line x1="0" y1="200" x2="200" y2="40" stroke="#FCC609" strokeWidth="2.5" />
-            <line x1="0" y1="200" x2="200" y2="90" stroke="#F5B226" strokeWidth="2" />
-            <line x1="0" y1="200" x2="200" y2="140" stroke="#FCC609" strokeWidth="2" />
-            <line x1="0" y1="200" x2="160" y2="0" stroke="#FCC609" strokeWidth="2" />
-            <line x1="0" y1="200" x2="110" y2="0" stroke="#F5B226" strokeWidth="2.5" />
-            <line x1="0" y1="200" x2="60" y2="0" stroke="#FCC609" strokeWidth="2" />
-          </svg>
-        </div>
+        {/* Ambient Top Subtle Line */}
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#FCC609]/30 to-transparent pointer-events-none" />
 
-        {/* Hero Content (Left-aligned) */}
-        <div className="max-w-[1240px] mx-auto px-5 sm:px-8 w-full relative z-[3] my-auto">
-          <div className="max-w-2xl space-y-6 text-left">
-            {/* Pill Tag */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FCC609]/20 border border-[#FCC609]/50 text-[#FCC609] text-xs font-bold tracking-wider uppercase backdrop-blur-xs animate-in fade-in slide-in-from-bottom-2 duration-500">
-              <span className="w-2 h-2 rounded-full bg-[#FCC609] animate-pulse"></span>
-              Free Evening School & Computer Training
+        <div className="max-w-[1240px] mx-auto px-5 sm:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+            {/* Left Column: Mission, Typography & Action */}
+            <div className="lg:col-span-7 space-y-6 text-left">
+              {/* Status Pill Badge */}
+              <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white border border-[#FCC609]/40 shadow-2xs text-ink text-xs font-bold tracking-wide">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FCC609] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FCC609]"></span>
+                </span>
+                <span>Official Welfare Society · UET Taxila · Est. 2014</span>
+              </div>
+
+              {/* Main Heading */}
+              <div className="space-y-3">
+                <h1 className="font-display font-bold text-ink tracking-tight leading-[1.08] text-4xl sm:text-5xl lg:text-6xl">
+                  A Struggle for <br />
+                  <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#D49000] via-[#EB543B] to-[#B82B14]">
+                    Literate Pakistan
+                    <svg className="absolute -bottom-2.5 left-0 w-full h-3 text-[#FCC609]" viewBox="0 0 280 14" fill="none" preserveAspectRatio="none">
+                      <path d="M2 10.5C70 3.5 210 3.5 278 10.5" stroke="currentColor" strokeWidth="4.5" strokeLinecap="round" />
+                    </svg>
+                  </span>
+                </h1>
+
+                {/* Urdu Tagline */}
+                <div className="font-urdu text-lg sm:text-2xl text-[#9E6500] leading-loose font-semibold pt-1">
+                  ایک جدوجہد، باوقار اور خواندہ پاکستان کے لیے
+                </div>
+              </div>
+
+              {/* Supporting Body */}
+              <p className="text-base sm:text-lg text-pen-gray leading-relaxed max-w-xl font-normal">
+                Every evening while campus labs close, undergraduate engineering students gather 70+ underprivileged children near Gate 2 to provide free evening schooling, digital computer literacy at IT Box, and break the cycle of generational poverty.
+              </p>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-4 pt-1">
+                <Link
+                  href="/donate"
+                  className="btn-primary shadow-lg shadow-[#FCC609]/20 hover:shadow-xl hover:shadow-[#FCC609]/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+                >
+                  <Heart className="w-4 h-4 fill-ink" />
+                  <span>Donate Now</span>
+                </Link>
+
+                <Link
+                  href="/sponsor"
+                  className="btn-secondary bg-white hover:bg-paper shadow-2xs hover:shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+                >
+                  <span>Sponsor a Child</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              {/* Trust Micro-Row */}
+              <div className="pt-4 border-t border-mist/80 flex flex-wrap items-center gap-y-2 gap-x-6 text-xs font-semibold text-pen-gray">
+                <span className="inline-flex items-center gap-1.5">
+                  <ShieldCheck className="w-4 h-4 text-emerald-600" />
+                  100% Volunteer Run
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-[#EB543B]" />
+                  Audited Ground Transparency
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <MapPin className="w-4 h-4 text-[#FCC609]" />
+                  Gate 2, UET Taxila
+                </span>
+              </div>
             </div>
 
-            {/* Heading: A Struggle for Literate Pakistan */}
-            <h1 className="font-display font-semibold text-white tracking-tight leading-[1.08] text-4xl sm:text-5xl lg:text-6xl animate-in fade-in slide-in-from-bottom-3 duration-700">
-              A Struggle for <br />
-              <span className="pen-nib-line text-[#FCC609]">Literate Pakistan</span>
-            </h1>
+            {/* Right Column: Multi-Card Feature Showcase */}
+            <div className="lg:col-span-5 relative mt-6 lg:mt-0">
+              {/* Outer Decorative Glow Halo */}
+              <div className="absolute -inset-2 bg-gradient-to-tr from-[#FCC609]/20 via-[#EB543B]/10 to-transparent rounded-[32px] blur-xl opacity-70 pointer-events-none" />
 
-            {/* Supporting Text */}
-            <p className="text-base sm:text-lg text-white/90 leading-relaxed font-normal max-w-xl animate-in fade-in slide-in-from-bottom-4 duration-700">
-              Umeed E Subh provides free quality evening schooling to 70+ deserving children at Pehla Qadam School, practical digital computer literacy at IT Box, and vocational support to build an educated, dignified nation.
-            </p>
+              {/* Main Master Card */}
+              <div className="relative bg-white rounded-3xl border border-mist shadow-xl p-6 sm:p-7 space-y-5 text-left">
+                {/* Header row */}
+                <div className="flex items-center justify-between pb-4 border-b border-mist">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-[#FFF3D1] border border-[#FCC609]/50 flex items-center justify-center text-ink shadow-2xs">
+                      <BookOpen className="w-5 h-5 text-[#EB543B]" />
+                    </div>
+                    <div>
+                      <div className="font-display font-bold text-sm sm:text-base text-ink">
+                        Daily Ground Programs
+                      </div>
+                      <div className="text-[11px] text-pen-gray">
+                        Active Evening Operations
+                      </div>
+                    </div>
+                  </div>
 
-            {/* Urdu Tagline in Noto Nastaliq Urdu */}
-            <div className="font-urdu text-base sm:text-lg text-[#FCC609] leading-loose animate-in fade-in slide-in-from-bottom-4 duration-700">
-              ایک جدوجہد، باوقار اور خواندہ پاکستان کے لیے
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-[10px] font-bold">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    4:30 – 7:00 PM
+                  </span>
+                </div>
+
+                {/* 3 Program Feature Rows */}
+                <div className="space-y-3">
+                  {/* Item 1: Pehla Qadam School */}
+                  <div className="p-3.5 rounded-2xl bg-[#FAF9F5] border border-mist/80 hover:border-[#FCC609] transition-colors flex items-start gap-3.5 group">
+                    <div className="w-9 h-9 rounded-xl bg-amber-100/70 text-amber-900 flex items-center justify-center shrink-0 mt-0.5">
+                      <GraduationCap className="w-4 h-4" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="font-display font-bold text-xs sm:text-sm text-ink group-hover:text-[#EB543B] transition-colors">
+                          Pehla Qadam School
+                        </span>
+                        <span className="text-[10px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded-md">
+                          70+ Daily
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-pen-gray mt-0.5 line-clamp-1">
+                        Free formal education, syllabus books, uniforms & meals.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Item 2: IT Box Lab */}
+                  <div className="p-3.5 rounded-2xl bg-[#FAF9F5] border border-mist/80 hover:border-[#FCC609] transition-colors flex items-start gap-3.5 group">
+                    <div className="w-9 h-9 rounded-xl bg-[#FFF0EE] text-[#EB543B] flex items-center justify-center shrink-0 mt-0.5">
+                      <Laptop className="w-4 h-4" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="font-display font-bold text-xs sm:text-sm text-ink group-hover:text-[#EB543B] transition-colors">
+                          IT Box Computer Lab
+                        </span>
+                        <span className="text-[10px] font-bold text-[#EB543B] bg-red-50 px-2 py-0.5 rounded-md">
+                          200+ Certified
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-pen-gray mt-0.5 line-clamp-1">
+                        Web design, graphic design & computer literacy batches.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Item 3: Seasonal & Family Relief */}
+                  <div className="p-3.5 rounded-2xl bg-[#FAF9F5] border border-mist/80 hover:border-[#FCC609] transition-colors flex items-start gap-3.5 group">
+                    <div className="w-9 h-9 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center shrink-0 mt-0.5">
+                      <Users className="w-4 h-4" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="font-display font-bold text-xs sm:text-sm text-ink group-hover:text-[#EB543B] transition-colors">
+                          Relief & Vocational
+                        </span>
+                        <span className="text-[10px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded-md">
+                          1,100+ Families
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-pen-gray mt-0.5 line-clamp-1">
+                        Ration hampers, winter warmth drives & Chaddar stitching.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bottom Assurance Note */}
+                <div className="pt-3 border-t border-mist/70 flex items-center justify-between text-[11px] text-pen-gray">
+                  <span className="inline-flex items-center gap-1.5 text-ink font-medium">
+                    <Sparkles className="w-3.5 h-3.5 text-[#FCC609]" />
+                    Zero admin fees from donations
+                  </span>
+                  <Link href="/about" className="font-bold text-[#EB543B] hover:underline">
+                    Learn more →
+                  </Link>
+                </div>
+              </div>
+
+              {/* Floating Badge (Bottom Left overlap) */}
+              <div className="hidden sm:flex absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md rounded-2xl border border-mist p-3.5 shadow-lg items-center gap-3 z-20">
+                <div className="w-9 h-9 rounded-full bg-[#FCC609] flex items-center justify-center font-bold text-ink text-xs shadow-2xs">
+                  PKR
+                </div>
+                <div className="text-left">
+                  <div className="font-display font-bold text-xs text-ink leading-tight">
+                    3,500 / Month
+                  </div>
+                  <div className="text-[10px] text-pen-gray">
+                    Full child education sponsorship
+                  </div>
+                </div>
+              </div>
             </div>
-
-            {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-4 pt-2 animate-in fade-in slide-in-from-bottom-5 duration-700">
-              <Link
-                href="/donate"
-                className="btn-primary shadow-lg hover:scale-[1.03] active:scale-[0.98] transition-all duration-200"
-              >
-                <span>Donate Now</span>
-              </Link>
-
-              <Link
-                href="/sponsor"
-                className="btn-secondary-white shadow-lg hover:scale-[1.03] active:scale-[0.98] transition-all duration-200"
-              >
-                <span>Sponsor a Child</span>
-                <span className="text-xs">→</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Scroll Cue at Bottom Center */}
-        <div className="relative z-[3] text-center pt-8 pb-4">
-          <div className="inline-flex flex-col items-center gap-1 text-[11px] text-white/60 tracking-widest uppercase">
-            <span>Scroll</span>
-            <div className="w-0.5 h-6 bg-gradient-to-b from-[#FCC609] to-transparent"></div>
           </div>
         </div>
       </section>
