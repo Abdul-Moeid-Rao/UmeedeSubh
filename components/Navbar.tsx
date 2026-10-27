@@ -53,7 +53,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-[68px]">
           {/* Logo with Real Image */}
           <Link href="/" className="group shrink-0 transition-transform duration-200 hover:scale-[1.01]">
-            <Logo variant="compact" theme="light" height={46} />
+            <Logo variant="compact" height={46} />
           </Link>
 
           {/* Desktop Navigation - Highly Visible, Attractive, Bold */}

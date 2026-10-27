@@ -28,6 +28,14 @@ export const metadata: Metadata = {
   title: 'UMEED E SUBH | Official Welfare Society of UET Taxila',
   description:
     'A Struggle for Literate Pakistan. Free evening schooling (70+ children), IT Box computer lab, Chaddar stitching academy for women, and seasonal relief drives near Gate 2, UET Taxila since 2014.',
+  icons: {
+    icon: [
+      { url: '/logo.jpg', sizes: 'any' },
+      { url: '/icon.jpg', sizes: 'any' },
+    ],
+    shortcut: '/logo.jpg',
+    apple: '/logo.jpg',
+  },
   keywords: [
     'Umeed e Subh',
     'UET Taxila',

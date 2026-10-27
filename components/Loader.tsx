@@ -57,7 +57,7 @@ export default function Loader() {
             <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-white shadow-2xl border-2 border-mist flex items-center justify-center p-3 overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/logo-alt.jpg"
+                src="/logo.jpg"
                 alt="Umeed E Subh Official Logo"
                 className="w-full h-full object-contain select-none pointer-events-none"
               />
