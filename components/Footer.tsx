@@ -218,10 +218,18 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
-          <div>
+        <div className="pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50">
+          <div className="text-center md:text-left">
             © Umeed E Subh. All Rights Reserved. A Struggle for Literate Pakistan.
           </div>
+
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-white/70 shadow-2xs">
+            <span>Developed by</span>
+            <span className="font-semibold text-[#FCC609]">Abdul Moeid Rao</span>
+            <span className="text-white/30">|</span>
+            <span className="text-white/90 font-mono text-[11px]">23-CS</span>
+          </div>
+
           <div className="flex items-center gap-4 text-[11px]">
             <span>Verified Ground Realities</span>
             <span>·</span>
